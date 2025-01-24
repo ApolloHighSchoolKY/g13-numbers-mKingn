@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -16,25 +16,30 @@ public class NumberAnalyzer
 	public NumberAnalyzer()
 	{
 		//Just make the ArrayList exist.
+		list = new ArrayList<Number>();
 	}
 
 	//Modified Constructor
 	public NumberAnalyzer(String numbers)
 	{
 		//Make the list exist first
-
+		list = new ArrayList<Number>();
 		//Filter the parameter through to the set method
-
+		setList(numbers);
 	}
 
 	//Methods
 	public void setList(String numbers)
 	{
+		list.clear();
 		//Clear the list
-
+		Scanner chopper = new Scanner (numbers);
 
 		//Create a scanner to chop up the string of numbers
-
+		while(chopper.hasNext());
+		{
+			list.add(new Number(chopper.nextInt()));
+		}
 
 		//Chop up the string
 
